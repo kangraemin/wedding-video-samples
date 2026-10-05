@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>식전영상 샘플</title>
+<style>
+:root{--bg:#f6f5f7;--fg:#231d26;--muted:#6c6370;--line:#e3dee5;--surface:#fff;--accent:#7a3b69}
+@media (prefers-color-scheme:dark){:root{--bg:#17141a;--fg:#ece7ee;--muted:#a69ca9;--line:#352d38;--surface:#211c24;--accent:#d39bc4}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;line-height:1.6;padding:0 16px}
+.wrap{max-width:1000px;margin:0 auto;padding-block:40px 64px}
+h1{font-size:1.9rem;margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+figcaption{padding:12px 14px;font-size:.92rem}
+figcaption b{display:block;margin-bottom:4px}
+.big{grid-column:1/-1}
+footer{margin-top:36px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>결혼식 식전영상 샘플</h1>
+  <p class="lede">사진과 문구만 넣으면 자동으로 렌더되는 템플릿으로 만든 결과물이다. 사진은 예시용 무료 이미지, 이름·날짜도 예시.</p>
+  <div class="grid">
+    <figure class="big"><video controls preload="metadata" src="videos/market-3min.mp4"></video>
+      <figcaption><b>3분 · 사진 148장</b>종이 질감 배경, 폴라로이드 콜라주, 손글씨 캡션, 한/영 자막, 얼굴 위치 기준 자동 크롭. 렌더 약 6분 43초.</figcaption></figure>
+    <figure><video controls preload="metadata" src="videos/demo-1min-a.mp4"></video>
+      <figcaption><b>1분 데모 A</b>캡션과 한/영 자막을 켠 버전.</figcaption></figure>
+    <figure><video controls preload="metadata" src="videos/demo-1min-b.mp4"></video>
+      <figcaption><b>1분 데모 B</b>같은 템플릿에 다른 커플 사진·문구·음악. 설정 파일만 바꿔 다시 렌더.</figcaption></figure>
+    <figure><video controls preload="metadata" src="videos/ffmpeg-demo.mp4"></video>
+      <figcaption><b>기본 슬라이드쇼</b>켄번스 효과와 크로스페이드만 쓴 단순 버전.</figcaption></figure>
+    <figure><video controls preload="metadata" src="videos/capcut-demo.mp4"></video>
+      <figcaption><b>CapCut 자동화 버전</b>CapCut 프로젝트에 사진·문구를 자동으로 넣고 내보낸 결과.</figcaption></figure>
+  </div>
+  <footer>
+    사진: Unsplash(Unsplash License). 음악: Kevin MacLeod "Canon in D Major"(CC BY 3.0, incompetech.com), Claude Debussy "Clair de lune"(퍼블릭 도메인 녹음).
+  </footer>
+</div>
+</body>
+</html>
